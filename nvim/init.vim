@@ -1,4 +1,4 @@
-" default options
+" defaul: options
 :set laststatus=2
 :set number
 :set relativenumber
@@ -29,18 +29,28 @@ Plug 'flazz/vim-colorschemes'
 Plug 'neoclide/coc.nvim'
 Plug 'sbdchd/neoformat'
 
+" Git
+Plug 'airblade/vim-gitgutter'
+
+" File Tree
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+
 call plug#end()
 
 " color scheme
-:set t_Co=256 
 :set background=dark
-:colorscheme vimbrant
+:colorscheme PaperColor  
 hi Normal guibg=NONE ctermbg=NONE
 
 " remaps
 let mapleader = " "
 nnoremap <leader>ps :Telescope find_files
 nnoremap <leader>ex :Explore
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 " lua 
 :lua << EOF
@@ -64,4 +74,4 @@ require'nvim-treesitter.configs'.setup {
         additional_vim_regex_highlighting = false,
     },
 }
-
+EOF
