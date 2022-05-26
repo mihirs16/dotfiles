@@ -24,6 +24,8 @@ Plug 'BurntSushi/ripgrep'
 
 " Themes
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'srcery-colors/srcery-vim'
+Plug 'ghifarit53/tokyonight-vim'
 
 " COC
 Plug 'neoclide/coc.nvim'
@@ -32,7 +34,9 @@ call plug#end()
 
 " color scheme
 :set background=dark
-:colorscheme PaperColor
+let g:tokyonight_enable_italic = 1
+let g:tokyonight_transparent_background = 1
+:colorscheme tokyonight
 
 " remaps
 let mapleader = " "
