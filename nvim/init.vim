@@ -23,23 +23,45 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'BurntSushi/ripgrep'
 
 " Themes
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'srcery-colors/srcery-vim'
-Plug 'ghifarit53/tokyonight-vim'
+Plug 'flazz/vim-colorschemes'
 
 " COC
 Plug 'neoclide/coc.nvim'
+Plug 'sbdchd/neoformat'
 
 call plug#end()
 
 " color scheme
+:set t_Co=256 
 :set background=dark
-let g:tokyonight_enable_italic = 1
-let g:tokyonight_transparent_background = 1
-:colorscheme tokyonight
+:colorscheme vimbrant
+hi Normal guibg=NONE ctermbg=NONE
 
 " remaps
 let mapleader = " "
 nnoremap <leader>ps :Telescope find_files
 nnoremap <leader>ex :Explore
+
+" lua 
+:lua << EOF
+require'nvim-treesitter.configs'.setup {
+    ensure_installed = { 
+      "c", 
+      "cpp", 
+      "python", 
+      "javascript",
+      "typescript", 
+      "rust", 
+      "go", 
+      "dart" 
+    },
+
+    -- Install parsers synchronously (only applied to `ensure_installed`)
+    sync_install = false,
+
+    highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false,
+    },
+}
 
