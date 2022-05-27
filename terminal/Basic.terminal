@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BackgroundBlur</key>
+	<real>0.75</real>
+	<key>BackgroundColor</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxAuMC4wOTAxOTYwNzg0MyAwLjA4ODQyMTMz
+	NzMxIDAuMDg4NDIxMzM3MzEgMC45ABABgALSFBUWF1okY2xhc3NuYW1lWCRjbGFzc2Vz
+	V05TQ29sb3KiFhhYTlNPYmplY3QIERokKTI3SUxRU1ddZGp3fq+xs7jDzNTXAAAAAAAA
+	AQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAOA=
+	</data>
+	<key>Font</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwVFlUkbnVsbNQNDg8QERIT
+	FFZOU1NpemVYTlNmRmxhZ3NWTlNOYW1lViRjbGFzcyNAKgAAAAAAABAQgAKAA18QFkZp
+	cmFDb2RlLUxpZ2h0X1JlZ3VsYXLSFxgZGlokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRm9u
+	dKIZG1hOU09iamVjdAgRGiQpMjdJTFFTWF5nbnd+hY6QkpStsr3GzdAAAAAAAAABAQAA
+	AAAAAAAcAAAAAAAAAAAAAAAAAAAA2Q==
+	</data>
+	<key>FontAntialias</key>
+	<true/>
+	<key>FontWidthSpacing</key>
+	<real>1.004032258064516</real>
+	<key>ProfileCurrentVersion</key>
+	<real>2.0699999999999998</real>
+	<key>ShowActiveProcessArgumentsInTitle</key>
+	<true/>
+	<key>ShowActiveProcessInTitle</key>
+	<false/>
+	<key>ShowDimensionsInTitle</key>
+	<false/>
+	<key>ShowRepresentedURLInTabTitle</key>
+	<true/>
+	<key>ShowRepresentedURLInTitle</key>
+	<false/>
+	<key>ShowShellCommandInTitle</key>
+	<false/>
+	<key>ShowTTYNameInTitle</key>
+	<false/>
+	<key>ShowWindowSettingsNameInTitle</key>
+	<false/>
+	<key>UseBoldFonts</key>
+	<false/>
+	<key>WindowTitle</key>
+	<string>nvim nvim/init.vim</string>
+	<key>columnCount</key>
+	<integer>200</integer>
+	<key>name</key>
+	<string>Basic</string>
+	<key>rowCount</key>
+	<integer>50</integer>
+	<key>type</key>
+	<string>Window Settings</string>
+</dict>
+</plist>

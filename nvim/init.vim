@@ -42,8 +42,8 @@ call plug#end()
 :set background=dark
 :colorscheme vimbrant 
 hi Normal guibg=NONE ctermbg=NONE
-let g:gitgutter_override_sign_column_highlight = 0
 hi SignColumn guibg=NONE ctermbg=NONE 
+hi StatusLine ctermfg=66 ctermbg=234
 
 " remaps
 let mapleader = " "
