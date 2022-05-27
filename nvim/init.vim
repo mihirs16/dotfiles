@@ -1,4 +1,4 @@
-" defaul: options
+" default: options
 :set laststatus=2
 :set number
 :set relativenumber
@@ -30,7 +30,7 @@ Plug 'neoclide/coc.nvim'
 Plug 'sbdchd/neoformat'
 
 " Git
-Plug 'airblade/vim-gitgutter'
+Plug 'lewis6991/gitsigns.nvim'
 
 " File Tree
 Plug 'preservim/nerdtree' |
@@ -40,8 +40,10 @@ call plug#end()
 
 " color scheme
 :set background=dark
-:colorscheme PaperColor  
+:colorscheme vimbrant 
 hi Normal guibg=NONE ctermbg=NONE
+let g:gitgutter_override_sign_column_highlight = 0
+hi SignColumn guibg=NONE ctermbg=NONE 
 
 " remaps
 let mapleader = " "
@@ -54,6 +56,17 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 " lua 
 :lua << EOF
+
+require'gitsigns'.setup{
+    signs = {
+        add          = {hl = 'GitSignsAdd'   , text = ' ', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
+        change       = {hl = 'GitSignsChange', text = ' ', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn' },
+        delete       = {hl = 'GitSignsDelete', text = ' ', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},   
+        topdelete    = {hl = 'GitSignsDelete', text = ' ', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},   
+        changedelete = {hl = 'GitSignsChange', text = ' ', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+    }
+}
+
 require'nvim-treesitter.configs'.setup {
     ensure_installed = { 
       "c", 
