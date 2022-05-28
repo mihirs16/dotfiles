@@ -63,6 +63,7 @@ hi NeoTreeCursorLine        guibg=240   ctermbg=236
 hi NeoTreeDirectoryName     guifg=NONE  ctermfg=NONE
 hi NeoTreeDirectoryIcon     guifg=NONE  ctermfg=NONE
 hi NeoTreeNormal            guifg=NONE  ctermfg=NONE
+hi NeoTreeFileName          guifg=NONE  ctermfg=NONE
 hi NeoTreeDotfile           guifg=240   ctermfg=240
 hi NeoTreeGitModified       guifg=228   ctermfg=228
 hi NeoTreeGitUntracked      guifg=155   ctermfg=155
