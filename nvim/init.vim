@@ -16,7 +16,7 @@ set background=dark
 
 call plug#begin()
 
-" Telescope
+" telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'sharkdp/fd'
@@ -45,7 +45,8 @@ call plug#end()
 " remaps
 let mapleader = " "
 nnoremap <leader>ps :Telescope find_files<cr>
-nnoremap <leader>ex :Neotree toggle show focus right<cr>
+nnoremap <leader>ex :Neotree focus<cr>
+nnoremap <C-t>      :Neotree toggle show<cr>
 
 " color scheme
 colorscheme vimbrant 
@@ -60,10 +61,10 @@ hi GitSignsDelete           guibg=NONE  ctermbg=NONE  guifg=197  ctermfg=197
 
 " neo-tree highlights
 hi NeoTreeCursorLine        guibg=240   ctermbg=236
-hi NeoTreeDirectoryName     guifg=NONE  ctermfg=NONE
-hi NeoTreeDirectoryIcon     guifg=NONE  ctermfg=NONE
-hi NeoTreeNormal            guifg=NONE  ctermfg=NONE
-hi NeoTreeFileName          guifg=NONE  ctermfg=NONE
+hi NeoTreeDirectoryName     guifg=250   ctermfg=250
+hi NeoTreeDirectoryIcon     guifg=250   ctermfg=250
+hi NeoTreeNormal            guifg=250   ctermfg=250
+hi NeoTreeFileName          guifg=250   ctermfg=250
 hi NeoTreeDotfile           guifg=240   ctermfg=240
 hi NeoTreeGitModified       guifg=228   ctermfg=228
 hi NeoTreeGitUntracked      guifg=155   ctermfg=155
@@ -78,7 +79,7 @@ require'neo-tree'.setup {
         }
     },
     window = {
-        position = 'right'
+        position = "left"
     }
 }
 
