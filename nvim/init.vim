@@ -12,7 +12,7 @@ set incsearch
 set scrolloff=8
 set signcolumn=yes
 set background=dark
-
+set splitright
 
 call plug#begin()
 
