@@ -47,6 +47,7 @@ let mapleader = " "
 nnoremap <leader>ps :Telescope find_files<cr>
 nnoremap <leader>ex :Neotree focus<cr>
 nnoremap <C-t>      :Neotree toggle show<cr>
+nnoremap <leader>dd :call CocActionAsync('jumpDefinition')<cr>
 
 " color scheme
 colorscheme vimbrant 

@@ -55,7 +55,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -114,6 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias python=python3
+alias pip=pip3
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -121,3 +122,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/Documents/GitHub/dotfiles/zsh/.p10k.zsh.
 [[ ! -f ~/Documents/GitHub/dotfiles/zsh/.p10k.zsh ]] || source ~/Documents/GitHub/dotfiles/zsh/.p10k.zsh
+
+# Created by `pipx` on 2022-05-31 16:11:50
+export PATH="$PATH:/Users/mihirsingh/.local/bin"
