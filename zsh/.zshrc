@@ -125,6 +125,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias python=python3
 alias pip=pip3
+alias saxonxq="java -cp /opt/homebrew/opt/saxon/libexec/saxon-he-11.4.jar net.sf.saxon.Query"
+
+# zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
