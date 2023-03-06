@@ -31,7 +31,7 @@ Plug 'MunifTanjim/nui.nvim'
 Plug 'nvim-neo-tree/neo-tree.nvim'
 
 " coc
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " gitsigns
 Plug 'lewis6991/gitsigns.nvim'
