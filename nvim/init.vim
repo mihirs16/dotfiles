@@ -39,6 +39,9 @@ Plug 'lewis6991/gitsigns.nvim'
 " colorschemes
 Plug 'flazz/vim-colorschemes'
 
+" copilot
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 
