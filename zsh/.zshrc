@@ -18,7 +18,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # nodejs
-export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+# export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
