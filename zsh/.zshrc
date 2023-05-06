@@ -36,6 +36,10 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # CPPFlags (java?)
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
+# GRPC
+export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
+export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
